@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <nav class="sidebar d-flex flex-column p-3">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li><a href="../index.html" class="nav-link">Início</a></li>
+            <li><a href="ciencias-humanas.html" class="nav-link">Ciências Humanas</a></li>
+            <li><a href="ciencias-natureza.html" class="nav-link">Ciências da Natureza</a></li>
+            <li><a href="matematica.html" class="nav-link active">Matemática</a></li>
+            <li><a href="linguagens.html" class="nav-link">Linguagens</a></li>
+            <li><a href="../tendencias-tecnologicas/ciberseguranca.html" class="nav-link">Cibersegurança</a></li>
+            <li><a href="../tendencias-tecnologicas/blockchain.html" class="nav-link">Blockchain</a></li>
+            <li><a href="../tendencias-tecnologicas/automacao-robotica.html" class="nav-link">Automação e Robótica</a></li>
+            <li><a href="../tendencias-tecnologicas/edge-computing.html" class="nav-link">Edge Computing</a></li>
+            <li><a href="../portfolio/portfolio.html" class="nav-link">Portfólio</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero-section text-center py-5">
+            <h1 class="display-4">Matemática</h1>
+            <p class="lead">Descubra o universo da Matemática, a linguagem universal dos números e das formas.</p>
+            <button class="btn btn-primary mt-3" onclick="scrollToSection('topics-section')">Saiba Mais</button>
+        </section>
+
+        <section class="content-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <h2 class="section-title">Sobre Matemática</h2>
+                        <p>A Matemática é a ciência dos números, formas e padrões. Ela abrange diversas áreas como álgebra, geometria e cálculo, sendo essencial para a resolução de problemas em ciências, engenharia e finanças.</p>
+                        <button class="btn btn-outline-primary mt-3" onclick="scrollToSection('best-work')">Ver o melhor Trabalho do Ano</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="../imagens/mat1.png" class="img-fluid rounded" alt="Matemática">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topics-section bg-light py-5" id="topics-section">
+            <div class="container">
+                <h2 class="text-center mb-4">Principais Temas</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Álgebra</h3>
+                        <p>Estudo das operações e estruturas algébricas, abrangendo equações, funções e polinômios, fundamentais para a modelagem matemática.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Geometria</h3>
+                        <p>Exploração das propriedades das formas e do espaço, incluindo estudo de figuras, ângulos, e transformações geométricas.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Cálculo</h3>
+                        <p>Ramo da matemática que lida com taxas de variação e a acumulação de quantidades, essencial em física e outras ciências aplicadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="best-work py-5" id="best-work">
+            <div class="container">
+                <h2 class="text-center mb-4">Melhor Trabalho do Ano</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src="../imagens/Mat/trabalhopoker.png" class="img-fluid rounded" alt="Melhor Trabalho do Ano">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3>Trabalho evolvendo probabilidade e Poker</h3>
+                        <p>Na área de Matemática, o trabalho que mais gostei foi sobre Poker. Tive que resolver algumas questões relacionadas ao jogo, e como eu já gosto bastante de jogar, foi ainda mais interessante. Foi legal ver como os cálculos e probabilidades fazem parte de cada jogada e como isso influencia as decisões no jogo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

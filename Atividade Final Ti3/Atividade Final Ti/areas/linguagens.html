@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagens</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <nav class="sidebar d-flex flex-column p-3">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li><a href="../index.html" class="nav-link">Início</a></li>
+            <li><a href="ciencias-humanas.html" class="nav-link">Ciências Humanas</a></li>
+            <li><a href="ciencias-natureza.html" class="nav-link">Ciências da Natureza</a></li>
+            <li><a href="matematica.html" class="nav-link">Matemática</a></li>
+            <li><a href="linguagens.html" class="nav-link active">Linguagens</a></li>
+            <li><a href="../tendencias-tecnologicas/ciberseguranca.html" class="nav-link">Cibersegurança</a></li>
+            <li><a href="../tendencias-tecnologicas/blockchain.html" class="nav-link">Blockchain</a></li>
+            <li><a href="../tendencias-tecnologicas/automacao-robotica.html" class="nav-link">Automação e Robótica</a></li>
+            <li><a href="../tendencias-tecnologicas/edge-computing.html" class="nav-link">Edge Computing</a></li>
+            <li><a href="../portfolio/portfolio.html" class="nav-link">Portfólio</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero-section text-center py-5">
+            <h1 class="display-4">Linguagens</h1>
+            <p class="lead">Explore as linguagens que moldam nossa comunicação, expressão e pensamento.</p>
+            <button class="btn btn-primary mt-3" onclick="scrollToSection('topics-section')">Saiba Mais</button>
+        </section>
+
+        <section class="content-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <h2 class="section-title">Sobre Linguagens</h2>
+                        <p>O estudo das Linguagens abrange diversas formas de comunicação, incluindo linguagens verbais, visuais e de programação. Cada uma desempenha um papel fundamental na expressão de ideias, emoções e conhecimento, sendo essenciais para a interação humana e o desenvolvimento da cultura e tecnologia.</p>
+                        <button class="btn btn-outline-primary mt-3" onclick="scrollToSection('best-work')">Ver o melhor Trabalho do Ano</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="../imagens/lin1.png" class="img-fluid rounded" alt="Linguagens">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topics-section bg-light py-5" id="topics-section">
+            <div class="container">
+                <h2 class="text-center mb-4">Principais Temas</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Linguística</h3>
+                        <p>Estudo da linguagem humana, abrangendo sua estrutura, uso, evolução e variações. Inclui temas como fonética, sintaxe e semântica.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Literatura</h3>
+                        <p>Exploração de textos escritos e orais, suas histórias, culturas e estilos. Aborda gêneros literários e a análise crítica de obras.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Programação</h3>
+                        <p>Linguagens computacionais que permitem a criação de software. Envolve lógica, algoritmos e a construção de sistemas tecnológicos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="best-work py-5" id="best-work">
+            <div class="container">
+                <h2 class="text-center mb-4">Melhor Trabalho do Ano</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src="../imagens/Lin/trabalhopágina.png" class="img-fluid rounded" alt="Melhor Trabalho do Ano">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3>Obra Surrealista</h3>
+                        <p>Na área de Linguagens, o trabalho que mais marcou foi criar uma página que juntasse uma obra surrealista e escrita dadaísta. Na frente, criei uma obra surrealista, com elementos que saíam do comum, tentando criar algo que realmente fugisse da lógica. Já no verso, recortei algumas letras e formei frases no estilo dadaísta. Foi um trabalho que precisou de bastante criatividade, onde o objetivo era ir além do óbvio e explorar novas formas de expressão. Esse foi o melhor trabalho do ano para mim, porque eu gostei como o trabalho me fez pensar fora da caixa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

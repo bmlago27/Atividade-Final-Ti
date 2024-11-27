@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciências Humanas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <nav class="sidebar d-flex flex-column p-3">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li><a href="../index.html" class="nav-link">Início</a></li>
+            <li><a href="ciencias-humanas.html" class="nav-link active">Ciências Humanas</a></li>
+            <li><a href="ciencias-natureza.html" class="nav-link">Ciências da Natureza</a></li>
+            <li><a href="matematica.html" class="nav-link">Matemática</a></li>
+            <li><a href="linguagens.html" class="nav-link">Linguagens</a></li>
+            <li><a href="../tendencias-tecnologicas/ciberseguranca.html" class="nav-link">Cibersegurança</a></li>
+            <li><a href="../tendencias-tecnologicas/blockchain.html" class="nav-link">Blockchain</a></li>
+            <li><a href="../tendencias-tecnologicas/automacao-robotica.html" class="nav-link">Automação e Robótica</a></li>
+            <li><a href="../tendencias-tecnologicas/edge-computing.html" class="nav-link">Edge Computing</a></li>
+            <li><a href="../portfolio/portfolio.html" class="nav-link">Portfólio</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero-section text-center py-5">
+            <h1 class="display-4">Ciências Humanas</h1>
+            <p class="lead">Explore os conceitos fundamentais que definem a experiência humana e nossa sociedade.</p>
+            <button class="btn btn-primary mt-3" onclick="scrollToSection('topics-section')">Saiba Mais</button>
+        </section>
+
+        <section class="content-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <h2 class="section-title">Sobre Ciências Humanas</h2>
+                        <p>As Ciências Humanas estudam as complexidades da sociedade e da cultura, analisando como o ser humano se relaciona com o mundo e consigo mesmo. Áreas como Sociologia, Filosofia, e História trazem um entendimento profundo sobre os fenômenos sociais.</p>
+                        <button class="btn btn-outline-primary mt-3" onclick="scrollToSection('best-work')">Ver o melhor Trabalho do Ano</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="../imagens/ch1.png" class="img-fluid rounded" alt="Ciências Humanas">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topics-section bg-light py-5" id="topics-section">
+            <div class="container">
+                <h2 class="text-center mb-4">Principais Temas</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>História</h3>
+                        <p>Estudo das civilizações, eventos e mudanças que moldaram a humanidade. A História nos ajuda a entender nosso passado e nossa identidade cultural.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Filosofia</h3>
+                        <p>Exploração do pensamento humano sobre ética, existência e conhecimento. A Filosofia busca as verdades fundamentais sobre o universo e a vida.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Sociologia</h3>
+                        <p>Análise das estruturas e dinâmicas das sociedades. A Sociologia investiga como os grupos humanos interagem e como isso molda nossa cultura.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="best-work py-5" id="best-work">
+            <div class="container">
+                <h2 class="text-center mb-4">Melhor Trabalho do Ano</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src="../imagens/Ch/ohomembicentenario1.png" class="img-fluid rounded" alt="Melhor Trabalho do Ano">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3>Relato de leitura</h3>
+                        <p>Esse trabalho fez parte da atividade integrada de Ciências Humanas do quarto bimestre. E para realizar ela, fizemos a leitura do livro "O Homem Bicentenário", onde exploramos temas como humanidade, identidade e o impacto da tecnologia nas relações sociais. Após a leitura, participamos de debates e discussões em grupo, o que nos ajudou a refletir sobre as principais ideias do livro e a conectá-las aos conteúdos estudados na área de Ciências Humanas. Nosso objetivo foi analisar como as questões abordadas no livro se relacionam com dilemas contemporâneos, como o avanço da inteligência artificial, o conceito de direitos humanos e os desafios éticos da inovação tecnológica. Por fim, eu considero esse o melhor trabalho do ano porque, de fato me fez pensar nas questões filosóficas e éticas levantadas no filme, ainda que seja um filme antigo, ele retrata muitas coisas que estão presentes hoje em dia, ainda mais com as I.A's, que estão em alta atualmente. Também refletimos sobre momentos marcantes, como quando Andrew (que é o robô da imagem) exige liberdade para viver como deseja, e sua decisão de buscar transformações físicas para se aproximar da humanidade, conectando essas ações ao conceito de autonomia e dignidade humana.</p>
+                    </div>
+                </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

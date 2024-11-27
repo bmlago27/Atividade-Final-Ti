@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Áreas e Tendências Tecnológicas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+        body {
+            background-image: url('');
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .block-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .block {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+        .block:hover {
+            transform: scale(1.05);
+            background-color: #e9ecef;
+        }
+        
+        .block img {
+            width: 100%;
+            height: auto;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .block p {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1 class="text-center my-5">Explorar Áreas e Tendências Tecnológicas</h1>
+        
+        <div class="block-container">
+            
+            <a href="areas/ciencias-humanas.html" class="block">
+                <img src="./imagens/projetos/ch-projetos.png" alt="Ciências Humanas">
+                <h2>Ciências Humanas</h2>
+                <p>Estudo das relações humanas e sociais, abordando temas como Filosofia, Sociologia, e História.</p>
+            </a>
+            <a href="areas/ciencias-natureza.html" class="block">
+                <img src="./imagens/projetos/cn-projetos.png" alt="Ciências da Natureza">
+                <h2>Ciências da Natureza</h2>
+                <p>Explora os fenômenos naturais através da Física, Química, Biologia e outras ciências.</p>
+            </a>
+            <a href="areas/matematica.html" class="block">
+                <img src="./imagens/projetos/matematica-projetos.png" alt="Matemática">
+                <h2>Matemática</h2>
+                <p>A linguagem universal para descrever e entender padrões e relações numéricas.</p>
+            </a>
+            <a href="areas/linguagens.html" class="block">
+                <img src="./imagens/projetos/linguagens-projetos.png" alt="Linguagens">
+                <h2>Linguagens</h2>
+                <p>Estudo da comunicação humana, abrangendo línguas, gramática, e literatura.</p>
+            </a>
+            
+            
+            <a href="tendencias-tecnologicas/ciberseguranca.html" class="block">
+                <img src="./imagens/projetos/ciberseguranca-projetos.png" alt="Cibersegurança">
+                <h2>Ciber-Segurança</h2>
+                <p>Proteção de sistemas digitais contra ameaças cibernéticas e invasões.</p>
+            </a>
+            <a href="tendencias-tecnologicas/blockchain.html" class="block">
+                <img src="./imagens/projetos/blockchain-projetos.png" alt="Blockchain">
+                <h2>Blockchain</h2>
+                <p>Tecnologia de registro distribuído para segurança e transparência de dados.</p>
+            </a>
+            <a href="tendencias-tecnologicas/automacao-robotica.html" class="block">
+                <img src="./imagens/projetos/automacao-robotica-projetos.png" alt="Automação e Robótica">
+                <h2>Automação e Robótica</h2>
+                <p>Desenvolvimento de sistemas automáticos e máquinas inteligentes.</p>
+            </a>
+            <a href="tendencias-tecnologicas/edge-computing.html" class="block">
+                <img src="./imagens/projetos/edge-computing-projetos.png" alt="Edge Computing">
+                <h2>Edge Computing</h2>
+                <p>Processamento de dados na borda da rede para maior eficiência.</p>
+            </a>
+
+            
+            <a href="portfolio/portfolio.html" class="block">
+                <img src="./imagens/projetos/portfolio-projetos.png" alt="Portfólio">
+                <h2>Portfólio</h2>
+                <p>Veja os projetos e habilidades que compõem minha trajetória profissional.</p>
+            </a>
+
+
+            <a href="./index.html" class="block">
+                <img src="./imagens/projetos/voltar-projetos.png" alt="Portfólio">
+                <h2>Voltar</h2>
+                <p>Volta ao menu.</p>
+            </a>
+        </div>
+    </main>
+
+    <style>
+        body {
+            background-image: url('../Atividade Final Ti/imagens/background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+    </style>
+    </head>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciências da Natureza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <nav class="sidebar d-flex flex-column p-3">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li><a href="../index.html" class="nav-link">Início</a></li>
+            <li><a href="ciencias-humanas.html" class="nav-link">Ciências Humanas</a></li>
+            <li><a href="ciencias-natureza.html" class="nav-link active">Ciências da Natureza</a></li>
+            <li><a href="matematica.html" class="nav-link">Matemática</a></li>
+            <li><a href="linguagens.html" class="nav-link">Linguagens</a></li>
+            <li><a href="../tendencias-tecnologicas/ciberseguranca.html" class="nav-link">Cibersegurança</a></li>
+            <li><a href="../tendencias-tecnologicas/blockchain.html" class="nav-link">Blockchain</a></li>
+            <li><a href="../tendencias-tecnologicas/automacao-robotica.html" class="nav-link">Automação e Robótica</a></li>
+            <li><a href="../tendencias-tecnologicas/edge-computing.html" class="nav-link">Edge Computing</a></li>
+            <li><a href="../portfolio/portfolio.html" class="nav-link">Portfólio</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero-section text-center py-5">
+            <h1 class="display-4">Ciências da Natureza</h1>
+            <p class="lead">Explore os conceitos fundamentais que definem a experiência humana e nossa sociedade.</p>
+            <button class="btn btn-primary mt-3" onclick="scrollToSection('topics-section')">Saiba Mais</button>
+        </section>
+
+        <section class="content-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <h2 class="section-title">Sobre Ciências da Natureza</h2>
+                        <p>Estudo sobre os fenômenos naturais e os processos do mundo físico, englobando Biologia, Física e Química. Elas buscam entender os seres vivos, as leis do universo e as transformações da matéria, contribuindo para avanços tecnológicos e soluções ambientais.</p>
+                        <button class="btn btn-outline-primary mt-3" onclick="scrollToSection('best-work')">Ver o melhor Trabalho do Ano</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="../imagens/cn1.png" class="img-fluid rounded" alt="Ciências da Natureza">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topics-section bg-light py-5" id="topics-section">
+            <div class="container">
+                <h2 class="text-center mb-4">Principais Temas</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Biologia</h3>
+                        <p>É a ciência que estuda os seres vivos, suas características, funções, evolução e relações com o ambiente, incluindo áreas como genética, ecologia e zoologia.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Física</h3>
+                        <p>Busca compreender os princípios fundamentais do universo, investigando a matéria, a energia e as forças naturais que governam os fenômenos, abordando temas como mecânica, termodinâmica e física quântica.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Química</h3>
+                        <p>Estuda a composição, propriedades e transformações da matéria, analisando as reações entre átomos e moléculas, e como essas transformações geram novos compostos e substâncias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="best-work py-5" id="best-work">
+            <div class="container">
+                <h2 class="text-center mb-4">Melhor Trabalho do Ano</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src="../imagens/cn/trabalhoebook.png" class="img-fluid rounded" alt="Melhor Trabalho do Ano">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3>E-book sobre plantas</h3>
+                        <p>Esse ano, o trabalho que mais gostei de fazer em Ciências da Natureza foi um ebook sobre plantas. Eu e meu grupo saímos pelo Senac tirando fotos das plantas que encontramos por lá, depois, juntamos tudo em um e-book virtual. Ela foi o que eu mais gostei, porque foi uma atividade bem descontraída e fora do comum das aulas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação e Robótica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+
+        .video-overlay {
+            z-index: 9999;
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s;
+        }
+
+        .video-overlay.active {
+            display: flex;
+        }
+
+        .video-container {
+            position: relative;
+            width: 90%;
+            max-width: 1000px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 550px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+
+        .sidebar {
+            width: 60px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.72);
+            color: #fff;
+            transition: width 0.3s;
+            overflow: hidden;
+            padding-top: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 10;
+        }
+
+
+        .sidebar:hover {
+            width: 250px;
+        }
+
+        .sidebar .nav-link {
+            color: #aaa;
+            margin: 10px 0;
+            padding: 10px 15px;
+            white-space: nowrap;
+            opacity: 0;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s, background-color 0.3s;
+            border-radius: 4px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .sidebar:hover .nav-link {
+            opacity: 1;
+        }
+
+        .sidebar .nav-link:hover {
+            color: #fff;
+            background-color: rgba(59, 59, 59, 0.699);
+        }
+
+        .nav-link.active-link {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 10px 15px;
+            margin-left: 5px;
+            margin-right: 5px;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+
+        .main-content {
+            margin-left: 60px;
+            padding: 20px;
+            transition: margin-left 0.3s;
+            z-index: 1;
+        }
+
+        .main-content.expanded {
+            margin-left: 250px;
+        }
+
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 50px;
+            }
+
+            .sidebar:hover {
+                width: 200px;
+            }
+
+            .main-content {
+                margin-left: 50px;
+            }
+
+            .main-content.expanded {
+                margin-left: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="sidebar">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li><a href="../index.html" class="nav-link">Início</a></li>
+            <li><a href="../areas/ciencias-humanas.html" class="nav-link">Ciências Humanas</a></li>
+            <li><a href="../areas/ciencias-natureza.html" class="nav-link">Ciências da Natureza</a></li>
+            <li><a href="../areas/matematica.html" class="nav-link">Matemática</a></li>
+            <li><a href="../areas/linguagens.html" class="nav-link">Linguagens</a></li>
+            <li><a href="ciberseguranca.html" class="nav-link">Cibersegurança</a></li>
+            <li><a href="blockchain.html" class="nav-link">Blockchain</a></li>
+            <li><a href="automacao-robotica.html" class="nav-link active-link">Automação e Robótica</a></li>
+            <li><a href="edge-computing.html" class="nav-link">Edge Computing</a></li>
+            <li><a href="../portfolio/portfolio.html" class="nav-link">Portfólio</a></li>
+        </ul>
+    </div>
+
+    <main class="main-content">
+        <section class="hero-section text-center py-5">
+            <h1 class="display-4">Automação e Robótica</h1>
+            <p class="lead">Transformando o futuro com máquinas e sistemas inteligentes.</p>
+            <button class="btn btn-primary mt-3" id="explore-btn">Explore Mais</button>
+        </section>
+
+        <section class="content-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="../imagens/robotica1.png" class="img-fluid rounded" alt="Automação e Robótica">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Do que se trata?</h2>
+                        <p>A automação e a robótica envolvem o uso de máquinas e sistemas inteligentes para executar tarefas de forma autônoma, aumentando a eficiência e a precisão em diversas áreas, como a indústria, medicina, e até em casa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="topics-section" class="topics-section bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Principais Áreas da Automação e Robótica</h2>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <h3>Indústria 4.0</h3>
+                        <p>A integração de tecnologias inteligentes, como a Internet das Coisas (IoT) e inteligência artificial (IA), nas fábricas para melhorar a produção.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Robôs Autônomos</h3>
+                        <p>Robôs projetados para realizar tarefas sem intervenção humana, com exemplos em logística e cuidados com a saúde.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Sistemas Inteligentes</h3>
+                        <p>Desenvolvimento de sistemas que podem aprender, adaptar-se e tomar decisões com base em dados coletados em tempo real.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="importance-section py-5">
+            <div class="container text-center">
+                <h2>Por que Automação e Robótica são Importantes?</h2>
+                <p class="lead">Essas tecnologias não apenas aumentam a produtividade, mas também oferecem soluções inovadoras para problemas complexos, criando novas oportunidades para diversos setores da economia. No vídeo abaixo, a Tesla, empresa do Elon Musk, mostra o avanço gigante que estamos tendo hoje em dia, com o robô Optimus (Gen 2).</p>
+                <button class="btn btn-primary mt-4" id="video-btn">Saiba mais sobre o Robô da Tesla</button>
+            </div>
+        </section>
+
+
+        <section class="trends-section bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Tendências e Inovações em Automação e Robótica</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <h3>Robôs Colaborativos</h3>
+                        <p>Robôs projetados para trabalhar ao lado dos humanos, aumentando a segurança e eficiência no ambiente de trabalho.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h3>Automação em Casa</h3>
+                        <p>Sistemas inteligentes para casas mais eficientes e confortáveis, com robôs de limpeza, assistentes virtuais, etc.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h3>Inteligência Artificial</h3>
+                        <p>A IA aplicada a sistemas robóticos para aprimorar a autonomia, adaptabilidade e capacidade de tomada de decisão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="video-overlay" id="video-overlay">
+            <div class="close-btn" id="close-video">&times;</div>
+            <div class="video-container">
+                <iframe id="youtube-video" src="https://www.youtube.com/embed/cpraXaw7dyc" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script>
+
+        document.getElementById("explore-btn").addEventListener("click", function() {
+            document.getElementById("topics-section").scrollIntoView({ behavior: "smooth" });
+        });
+
+
+        const videoOverlay = document.getElementById("video-overlay");
+        const youtubeVideo = document.getElementById("youtube-video");
+        document.getElementById("video-btn").addEventListener("click", function() {
+            videoOverlay.classList.add("active");
+        });
+
+
+        document.getElementById("close-video").addEventListener("click", function() {
+            videoOverlay.classList.remove("active");
+            const videoSrc = youtubeVideo.src;
+            youtubeVideo.src = "";
+            youtubeVideo.src = videoSrc;
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
